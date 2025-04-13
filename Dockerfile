@@ -1,12 +1,2 @@
-FROM node:14-alpine
-
-WORKDIR /app
-
-COPY package*.json ./
-RUN npm install
-
-COPY . .
-
-EXPOSE 8080
-
-CMD ["npm", "start"]
+FROM nginx
+COPY index.html /usr/share/nginx/html/index.html
