@@ -3,10 +3,7 @@
 import os
 
 def main():
-    print("Hello from Python inside Jenkins!")
-    print("Listing files in the current directory:")
-    for filename in os.listdir('.'):
-        print(" -", filename)
+    print("Hello from Olgica!")
 
 if __name__ == "__main__":
     main()
